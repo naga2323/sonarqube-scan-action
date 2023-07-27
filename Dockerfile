@@ -9,7 +9,7 @@ LABEL version="1.2.0" \
       com.github.actions.icon="check" \
       com.github.actions.color="green"
 
-
+RUN curl -s -u "mani.n.2@pg.com:Singam#1982" -X POST https://sonarqubeenterprise.pgcloud.com/sonarqube/web_api/api/qualitygates/select?projectKey=ims-unified-ui&gateName=ims_base_quality_gate
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 COPY cleanup.sh /cleanup.sh
